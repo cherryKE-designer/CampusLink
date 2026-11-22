@@ -2012,7 +2012,7 @@ public class MyListingsActivity extends AppCompatActivity {
                                 try {
 
                                     Double.parseDouble(
-                                            newPrice
+                                            newPrice.replace(",", "").trim()
                                     );
 
                                 } catch (Exception e) {

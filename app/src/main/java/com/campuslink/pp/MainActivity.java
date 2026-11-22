@@ -1,6 +1,7 @@
 package com.campuslink.pp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Auto-login if session exists
+        SharedPreferences preferences = getSharedPreferences("CampusLinkSession", MODE_PRIVATE);
+        String accessToken = preferences.getString("access_token", "");
+        String userId = preferences.getString("user_id", "");
+        if (!accessToken.isEmpty() && !userId.isEmpty()) {
+            Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity_main);
 
         ViewCompat.setOnApplyWindowInsetsListener(

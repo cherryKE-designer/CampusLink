@@ -486,7 +486,7 @@ public class PostListingActivity extends AppCompatActivity {
         try {
 
             priceValue =
-                    Double.parseDouble(price);
+                    Double.parseDouble(price.replace(",", "").trim());
 
             if (priceValue < 0) {
 

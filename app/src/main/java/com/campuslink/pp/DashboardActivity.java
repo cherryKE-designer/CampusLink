@@ -52,6 +52,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     private MaterialButton btnLogout;
     private MaterialButton btnPost;
+    private FrameLayout notificationButton;
 
     private EditText searchInput;
     private ViewFlipper bannerFlipper;
@@ -153,6 +154,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void initializeViews() {
         btnLogout = findViewById(R.id.btnLogout);
         btnPost = findViewById(R.id.btnPost);
+        notificationButton = findViewById(R.id.notificationButton);
         searchInput = findViewById(R.id.searchInput);
         bannerFlipper = findViewById(R.id.bannerFlipper);
 
@@ -210,6 +212,16 @@ public class DashboardActivity extends AppCompatActivity {
 
                 startActivity(intent);
                 finish();
+            });
+        }
+
+        if (notificationButton != null) {
+            notificationButton.setOnClickListener(v -> {
+                Intent intent = new Intent(
+                        DashboardActivity.this,
+                        MessagesInboxActivity.class
+                );
+                startActivity(intent);
             });
         }
 
@@ -361,6 +373,10 @@ public class DashboardActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT
             ).show();
 
+            Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
             return;
         }
 
