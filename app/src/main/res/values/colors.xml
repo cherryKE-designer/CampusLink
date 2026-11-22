@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="campus_primary">#10B981</color>
+    <color name="campus_primary_dark">#059669</color>
+    <color name="campus_navy">#0A192F</color>
+    <color name="campus_navy_light">#1E293B</color>
+    <color name="campus_gray">#64748B</color>
+    <color name="campus_bg">#F8FAFC</color>
+</resources>

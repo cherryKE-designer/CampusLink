@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pure white background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- Soft geometric panels -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M0,0h55l-55,55z" />
+
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M108,108h-60l60,-60z" />
+
+    <!-- Subtle diagonal network lines -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M-10,82L35,37L72,74L118,28"
+        android:strokeWidth="1.2"
+        android:strokeColor="#330B3D2E" />
+
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M-8,28L30,66L65,31L116,82"
+        android:strokeWidth="1.0"
+        android:strokeColor="#250B3D2E" />
+
+    <!-- Connection nodes -->
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M32,37a3,3 0,1 0,6 0a3,3 0,1 0,-6 0" />
+
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M69,74a3,3 0,1 0,6 0a3,3 0,1 0,-6 0" />
+
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M62,31a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0" />
+
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M28,65a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0" />
+
+    <!-- Small decorative nodes -->
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M8,82a2,2 0,1 0,4 0a2,2 0,1 0,-4 0" />
+
+    <path
+        android:fillColor="#0B3D2E"
+        android:pathData="M96,28a2,2 0,1 0,4 0a2,2 0,1 0,-4 0" />
+
+    <!-- Central subtle circle -->
+    <path
+        android:fillColor="#F2F2F2"
+        android:pathData="M54,43a10,10 0,1 0,20 0a10,10 0,1 0,-20 0" />
+
+    <path
+        android:fillColor="#E6E6E6"
+        android:pathData="M58,43a6,6 0,1 0,12 0a6,6 0,1 0,-12 0" />
+
+</vector>
